@@ -1,0 +1,6 @@
+*.log
+history
+
+# sublime project files
+dotfiles.sublime-project
+dotfiles.sublime-workspace

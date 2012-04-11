@@ -1,0 +1,28 @@
+#!/bin/bash
+# This file is modified from archeydevils deploy script in the dotfiles repo. https://github.com/archeydevil/dotfiles.git
+
+dotfiles=$PWD
+cd ~
+
+[[ "x$1" == "x" ]] && echo "$0 [-f] [conky | git | todo | zsh | bash]" && exit 1
+[[ "$1" == "-f" ]] && f=f && shift
+
+deploy(){
+	while (($#)); do
+		ln -s$f	"$dotfiles/$1" ".$1"
+		shift
+	done
+}
+
+while (($#)); do
+	case "$1" in
+		"conky")		deploy conky conkyrc ;;
+		"git")		deploy gitconfig ;;	
+		"todo")		deploy todo ;;
+		"vim")		deploy vimrc ;;
+		"zsh")		deploy omz zshrc dircolors ;;
+		"bash")		deploy bashrc ;;
+		*)		echo "$0: deploy command $1 not understood" ;;
+	esac
+	shift
+done
