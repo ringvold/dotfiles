@@ -1,8 +1,6 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
-[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
-
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -42,7 +40,12 @@ plugins=(bundler git hub golang brew autojump sublime)
 
 source $ZSH/oh-my-zsh.sh
 source $ZSH_CUSTOM/*.zsh
-source ~/.localrc
+
+if [ -f ~/.zshrc_local ]; then
+    source ~/.zshrc_local
+fi
+
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 # Customize to your needs...
 export LESSCHARSET=utf-8

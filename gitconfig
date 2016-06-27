@@ -1,8 +1,6 @@
 [user]
   name = Harald Ringvold
   email = harald.ringvold@gmail.com
-[credential]
-  helper = osxkeychain
 [push]
   default = simple
 [color]
@@ -24,3 +22,5 @@
   editor = subl -w
 [core]
   excludesfile = /Users/harald/.gitignore_global
+[include]
+  path = ~/.gitconfig_local
