@@ -132,3 +132,9 @@ autocmd FileType ruby nmap <Leader>r :!ruby %<cr>
 "    autocmd!
 "    autocmd BufWritePre * :call s:MkNonExDir(expand('<afile>'), +expand('<abuf>'))
 "augroup END
+
+"" Load local override if present
+let $LOCALFILE=expand("~/.vimrc_local")
+if filereadable($LOCALFILE)
+    source $LOCALFILE
+endif

@@ -8,7 +8,7 @@
   status = auto
   diff = auto
 [http]
-  proxy =
+	proxy = 
   sslVerify = false
 [alias]
   # Log display from screencast, with train tracks.
@@ -18,9 +18,7 @@
   unstage = reset HEAD
   staged = diff --cached
   unstaged = diff
-[content]
-  editor = subl -w
 [core]
-  excludesfile = /Users/harald/.gitignore_global
+  excludesfile = ~/.gitignore_global
 [include]
   path = ~/.gitconfig_local
