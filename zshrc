@@ -49,6 +49,3 @@ fi
 
 # Customize to your needs...
 export LESSCHARSET=utf-8
-
-# VPN smiley
-# export PS1="\$(__create_smiley) $PS1" # Update prompt with function in ~/.oh-my-zsh/custom/osx-vpn.zsh
