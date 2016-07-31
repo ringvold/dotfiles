@@ -20,5 +20,6 @@
   unstaged = diff
 [core]
   excludesfile = ~/.gitignore_global
+	trustctime = false
 [include]
   path = ~/.gitconfig_local
