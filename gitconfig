@@ -1,6 +1,8 @@
 [user]
   name = Harald Ringvold
   email = harald.ringvold@gmail.com
+[github]
+  user = ringvold
 [push]
   default = simple
 [color]
@@ -8,8 +10,8 @@
   status = auto
   diff = auto
 [http]
-	proxy = 
   sslVerify = false
+	proxy = 
 [alias]
   # Log display from screencast, with train tracks.
   l = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(blue) %an, %ar%Creset'
