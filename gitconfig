@@ -11,7 +11,6 @@
   diff = auto
 [http]
   sslVerify = false
-	proxy = 
 [alias]
   # Log display from screencast, with train tracks.
   l = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(blue) %an, %ar%Creset'
@@ -21,7 +20,9 @@
   staged = diff --cached
   unstaged = diff
 [core]
+  editor = vim
   excludesfile = ~/.gitignore_global
 	trustctime = false
+	autocrlf = false
 [include]
   path = ~/.gitconfig_local
