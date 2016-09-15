@@ -1,3 +1,5 @@
+# Global aliases
+
 alias zshrefresh="source ~/.zshrc"
 
 # Git

@@ -9,6 +9,9 @@ source ~/.zsh/plugins_before.zsh
 # Oh My Zsh Bootstrap
 source ~/.zsh/ohmy.zsh
 
+# Settings
+source ~/.zsh/settings.zsh
+
 # Aliases
 source ~/.zsh/aliases.zsh
 
