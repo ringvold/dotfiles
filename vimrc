@@ -1,3 +1,21 @@
+set nocompatible              " be iMproved, required
+filetype on                   " required for compatibility with Mac OS X, See issue #167
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'itchyny/lightline.vim'
+Plugin 'junegunn/goyo.vim'
+Plugin 'junegunn/limelight.vim'
+
+" All of your Plugins must be added before the following line
+call vundle#end() " required
+
 " Jump to the marked line and column on ', and only the marked line on `.
 nnoremap ' `
 nnoremap ` '
@@ -38,9 +56,6 @@ filetype on
 filetype plugin on
 filetype indent on
 
-" Initialize pathogen.
-call pathogen#infect()
-
 " Quickly edit and source ~/.vimrc.
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
@@ -68,7 +83,7 @@ set copyindent
 set incsearch
 
 " Set default encoding
-set encoding=utf-8
+"set encoding=utf-8 " Got error for some reason.
 
 " Disable the arrow keys. You'll thank me later.
 map <up> <nop>
@@ -88,50 +103,18 @@ set laststatus=2
 " Customize the status line
 set statusline=%f\ (%{&fenc})%=\ %l/%L
 
-" Use fancy powerline symbols
-"let g:Powerline_symbols = 'fancy'
-
-" Copy gist URL to clipboard
-"let g:gist_clip_command = 'pbcopy'
+" Activate Limelight when starting Goyo
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
 
 " Detect the gist filetype from the filename
 let g:gist_detect_filetype = 1
-
-" Flush Command T upon writing to a file and gaining focus.
-"augroup CommandTExtension
-"  autocmd!
-"  autocmd FocusGained * CommandTFlush
-"  autocmd BufWritePost * CommandTFlush
-"augroup END
 
 " Convenience methods to run the current file
 autocmd FileType ruby nmap <Leader>r :!ruby %<cr>
 
 " Navigate open buffers
-"nmap <Space> :e#<Return>
-
-" Annotate code with xmpfilter (https://github.com/tnoda/rcodetools)
-"map <silent> <Leader>a :%!xmpfilter -a --no-warnings<CR>
-
-" Don't highlight Git gutter's sign column
-"highlight clear SignColumn
-
-" Always show Git gutter
-"let g:gitgutter_sign_column_always = 1
-
-" Create directories upon writing buffers if needed
-"function s:MkNonExDir(file, buf)
-"  if empty(getbufvar(a:buf, '&buftype')) && a:file!~#'\v^\w+\:\/'
-"      let dir=fnamemodify(a:file, ':h')
-"      if !isdirectory(dir)
-"          call mkdir(dir, 'p')
-"      endif
-"    endif
-"endfunction
-"augroup BWCCreateDir
-"    autocmd!
-"    autocmd BufWritePre * :call s:MkNonExDir(expand('<afile>'), +expand('<abuf>'))
-"augroup END
+nmap <Space> :e#<Return>
 
 "" Load local override if present
 let $LOCALFILE=expand("~/.vimrc_local")

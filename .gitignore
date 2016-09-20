@@ -4,3 +4,6 @@ history
 # sublime project files
 dotfiles.sublime-project
 dotfiles.sublime-workspace
+
+vim/vim.init
+vim/bundle/*

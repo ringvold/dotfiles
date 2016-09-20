@@ -8,10 +8,13 @@
     ~/.dotfiles: ''
     ~/.gitconfig: gitconfig
     ~/.vimrc: vimrc
+    ~/.vim: vim
     ~/.zsh: zsh
     ~/.zshrc: zshrc
     ~/.editorconfig: editorconfig
     ~/.mackup.cfg: mackup.cfg
+    ~/.config/nvim: vim
+    ~/.config/nvim/vim.init: vimrc
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
