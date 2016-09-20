@@ -11,6 +11,7 @@
     ~/.zsh: zsh
     ~/.zshrc: zshrc
     ~/.editorconfig: editorconfig
+    ~/.mackup.cfg: mackup.cfg
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
