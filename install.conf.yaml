@@ -14,7 +14,7 @@
     ~/.editorconfig: editorconfig
     ~/.mackup.cfg: mackup.cfg
     ~/.config/nvim: vim
-    ~/.config/nvim/vim.init: vimrc
+    ~/.config/nvim/init.vim: vimrc
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
