@@ -12,6 +12,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'itchyny/lightline.vim'
 Plugin 'junegunn/goyo.vim'
 Plugin 'junegunn/limelight.vim'
+Plugin 'sotte/presenting.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end() " required

@@ -5,5 +5,5 @@ history
 dotfiles.sublime-project
 dotfiles.sublime-workspace
 
-vim/vim.init
+vim/init.vim
 vim/bundle/*
