@@ -117,6 +117,20 @@ autocmd FileType ruby nmap <Leader>r :!ruby %<cr>
 " Navigate open buffers
 nmap <Space> :e#<Return>
 
+" Fra svv vimrc
+
+" Mark the 51st and 73rd column (for git commit summary messages)
+augroup gitcommit_filetype
+  autocmd!
+  au FileType gitcommit :set cc=51,73
+augroup end
+
+  " Force block cursor
+  let &t_ti.="\e[1 q"
+  let &t_SI.="\e[5 q"
+  let &t_EI.="\e[1 q"
+  let &t_te.="\e[0 q"
+
 "" Load local override if present
 let $LOCALFILE=expand("~/.vimrc_local")
 if filereadable($LOCALFILE)
