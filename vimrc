@@ -13,6 +13,7 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'junegunn/goyo.vim'
 Plugin 'junegunn/limelight.vim'
 Plugin 'sotte/presenting.vim'
+Plugin 'plasticboy/vim-markdown'
 
 " All of your Plugins must be added before the following line
 call vundle#end() " required
@@ -107,6 +108,9 @@ set statusline=%f\ (%{&fenc})%=\ %l/%L
 " Activate Limelight when starting Goyo
 autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
+
+" Set filetype markdown for .md files
+autocmd BufRead,BufNew *.md set filetype=markdown
 
 " Detect the gist filetype from the filename
 let g:gist_detect_filetype = 1
