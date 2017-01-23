@@ -17,8 +17,13 @@ export UPDATE_ZSH_DAYS=7
 DISABLE_CORRECTION="true"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 plugins=(git hub golang brew autojump sublime)
+
+# Add or override plugins locally
+if [ -f ~/ohmyzsh_plugins_local_after ]; then
+    source ~/.ohmyzsh_plugins_local_after
+fi
 
 source $ZSH/oh-my-zsh.sh

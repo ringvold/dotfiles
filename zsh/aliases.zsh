@@ -8,7 +8,7 @@ alias gs='g status'
 alias gau='g add -u .'
 alias gun='g reset HEAD'
 alias gdc='g diff --cached'
-alias fix='git diff --name-only | uniq | xargs subl'
+alias fixmerge='git diff --name-only | uniq | xargs subl'
 
 # Maven
 alias mci='mvn clean install'
