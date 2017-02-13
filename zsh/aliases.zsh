@@ -22,6 +22,8 @@ alias pfind='ps aux | grep'
 
 alias v=vagrant
 
+alias todos='pt "TODO:" ./ --group --color'
+
 
 function serve {
   port="${1:-3000}"
