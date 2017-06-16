@@ -25,11 +25,16 @@ nnoremap ` '
 " Remap leader to ",".
 let mapleader = ","
 
+:imap jj <Esc>
+
 " Keep 1000 commands worth of history.
 set history=1000
 
 " Allow 1000 levels of undo.
 set undolevels=1000
+
+set undodir=~/.vim/undodir
+set backupdir=~/.vim/backup
 
 " Ignore some files when autocompleting.
 set wildignore=*.swp,*.pyc,*.class,spec/tmp
