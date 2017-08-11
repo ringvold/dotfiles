@@ -19,7 +19,7 @@ DISABLE_CORRECTION="true"
 # Uncomment following line if you want red dots to be displayed while waiting for completion
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(git hub golang brew autojump sublime)
+plugins=(git hub golang brew autojump sublime docker-compose)
 
 # Add or override plugins locally
 if [ -f ~/ohmyzsh_plugins_local_after ]; then
