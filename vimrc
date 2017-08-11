@@ -22,6 +22,10 @@ call vundle#end() " required
 nnoremap ' `
 nnoremap ` '
 
+" Enables case insensitiv tab completion on commands. Eg. :lime <TAB> resolves
+" to :Limelight
+set ignorecase
+
 " Remap leader to ",".
 let mapleader = ","
 
