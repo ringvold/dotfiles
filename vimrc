@@ -14,6 +14,7 @@ Plugin 'junegunn/goyo.vim'
 Plugin 'junegunn/limelight.vim'
 Plugin 'sotte/presenting.vim'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'scrooloose/nerdtree'
 
 " All of your Plugins must be added before the following line
 call vundle#end() " required

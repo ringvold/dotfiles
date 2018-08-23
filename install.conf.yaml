@@ -18,3 +18,4 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  - ["git clone git@github.com:robbyrussell/oh-my-zsh.git ~/.oh-my-zsh", Installing ohmyzsh]
