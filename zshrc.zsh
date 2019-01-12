@@ -9,6 +9,8 @@ exec 3>&2 2>$logfile
 
 setopt XTRACE
 
+
+
 # Allow local customizations in the ~/.zshrc_local_before file
 if [ -f ~/.zshrc_local_before ]; then
     source ~/.zshrc_local_before
@@ -17,11 +19,17 @@ fi
 # External plugins (initialized before)
 source ~/.zsh/plugins_before.zsh
 
-# Oh My Zsh Bootstrap
-source ~/.zsh/ohmy.zsh
-
 # Settings
 source ~/.zsh/settings.zsh
+
+# Init zgen
+source ~/.zsh/zgen.zsh
+
+
+# Load lib files
+for config_file (~/.zsh/lib/*.zsh); do
+  source $config_file
+done
 
 # Aliases
 source ~/.zsh/aliases.zsh

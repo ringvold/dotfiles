@@ -20,7 +20,8 @@ alias tree4='tree -L 4'
 
 alias pfind='ps aux | grep'
 
-alias v=vagrant
+# Fasd istead of autojump
+alias j=z
 
 alias todos='pt "TODO:" ./ --group --color'
 

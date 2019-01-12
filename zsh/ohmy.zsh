@@ -7,7 +7,7 @@ ZSH=$HOME/.oh-my-zsh
 if type babun > /dev/null; then
   ZSH_THEME="babun"
 else
-  ZSH_THEME="apple"
+  ZSH_THEME="ringvold"
 fi
 
 # Uncomment to change how often before auto-updates occur? (in days)

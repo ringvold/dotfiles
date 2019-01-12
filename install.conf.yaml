@@ -4,19 +4,21 @@
 
 - clean: ['~']
 
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  - [mkdir -p ~/.vim/undodir ~/.vim/backup, Creating backup directories for vim]
+
 - link:
     ~/.dotfiles: ''
     ~/.gitconfig: gitconfig
     ~/.vimrc: vimrc
     ~/.vim: vim
     ~/.zsh: zsh
-    ~/.zshrc: zshrc
+    ~/.zshrc: zshrc.zsh
     ~/.editorconfig: editorconfig
     ~/.mackup.cfg: mackup.cfg
     ~/.config/nvim: vim
     ~/.config/nvim/init.vim: vimrc
 
-- shell:
-  - [git submodule update --init --recursive, Installing submodules]
-  - ["git clone git@github.com:robbyrussell/oh-my-zsh.git ~/.oh-my-zsh", Installing ohmyzsh]
-  - [mkdir -p ~/.vim/undodir ~/.vim/backup, Creating backup directories for vim]
+
+
