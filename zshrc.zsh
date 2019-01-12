@@ -1,13 +1,13 @@
-# Debug
-zmodload zsh/datetime
-setopt PROMPT_SUBST
-PS4='+$EPOCHREALTIME %N:%i> '
+# # Debug
+# zmodload zsh/datetime
+# setopt PROMPT_SUBST
+# PS4='+$EPOCHREALTIME %N:%i> '
 
-logfile=$(mktemp zsh_profile.XXXXXXXX)
-echo "Logging to $logfile"
-exec 3>&2 2>$logfile
+# logfile=$(mktemp zsh_profile.XXXXXXXX)
+# echo "Logging to $logfile"
+# exec 3>&2 2>$logfile
 
-setopt XTRACE
+# setopt XTRACE
 
 
 
@@ -43,6 +43,6 @@ if [ -f ~/.zshrc_local_after ]; then
 fi
 
 
-# Debug end
-unsetopt XTRACE
-exec 2>&3 3>&-
+# # Debug end
+# unsetopt XTRACE
+# exec 2>&3 3>&-

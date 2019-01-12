@@ -1,5 +1,5 @@
 # External plugins (initialized after)
 
 # Fasd
-source "~/.dotfiles/fasd/fasd"
+export PATH="$PATH:${HOME}/.dotfiles/fasd"
 eval "$(fasd --init auto)"
