@@ -1,13 +1,13 @@
 # # Debug
-# zmodload zsh/datetime
-# setopt PROMPT_SUBST
-# PS4='+$EPOCHREALTIME %N:%i> '
-
-# logfile=$(mktemp zsh_profile.XXXXXXXX)
-# echo "Logging to $logfile"
-# exec 3>&2 2>$logfile
-
-# setopt XTRACE
+#zmodload zsh/datetime
+#setopt PROMPT_SUBST
+#PS4='+$EPOCHREALTIME %N:%i> '
+#
+#logfile=$(mktemp zsh_profile.XXXXXXXX)
+#echo "Logging to $logfile"
+#exec 3>&2 2>$logfile
+#
+#setopt XTRACE
 
 
 
@@ -19,12 +19,14 @@ fi
 # External plugins (initialized before)
 source ~/.zsh/plugins_before.zsh
 
+# General shell config
+source ~/.dotfiles/shell/bootstrap.sh
+
 # Settings
 source ~/.zsh/settings.zsh
 
 # Init zgen
 source ~/.zsh/zgen.zsh
-
 
 # Load lib files
 for config_file (~/.zsh/lib/*.zsh); do
@@ -44,5 +46,5 @@ fi
 
 
 # # Debug end
-# unsetopt XTRACE
-# exec 2>&3 3>&-
+#unsetopt XTRACE
+#exec 2>&3 3>&-
