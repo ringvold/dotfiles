@@ -1,4 +1,4 @@
-# # Debug
+# Debug
 # zmodload zsh/datetime
 # setopt PROMPT_SUBST
 # PS4='+$EPOCHREALTIME %N:%i> '
@@ -43,6 +43,6 @@ if [ -f ~/.zshrc_local_after ]; then
 fi
 
 
-# # Debug end
+# Debug end
 # unsetopt XTRACE
 # exec 2>&3 3>&-
