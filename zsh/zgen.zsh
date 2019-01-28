@@ -9,6 +9,7 @@ if ! zgen saved; then
     zgen oh-my-zsh plugins/git
     zgen oh-my-zsh plugins/sublime
     zgen load zdharma/fast-syntax-highlighting
+    zgen load mroth/evalcache
 
     # completions
     zgen load zsh-users/zsh-completions src
