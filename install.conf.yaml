@@ -6,7 +6,6 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  - [mkdir -p ~/.vim/undodir ~/.vim/backup, Creating backup directories for vim]
 
 - link:
     ~/.dotfiles: ''

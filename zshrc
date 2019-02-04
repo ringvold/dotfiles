@@ -7,7 +7,7 @@
 # echo "Logging to $logfile"
 # exec 3>&2 2>$logfile
 
-setopt XTRACE
+#setopt XTRACE
 
 # Allow local customizations in the ~/.zshrc_local_before file
 if [ -f ~/.zshrc_local_before ]; then
