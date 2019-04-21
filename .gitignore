@@ -7,3 +7,9 @@ dotfiles.sublime-workspace
 
 vim/init.vim
 vim/bundle/*
+vim/backup/*
+vim/backup/*
+
+!vim/undodir/.gitkeep
+!vim/undodir/.gitkeep
+
