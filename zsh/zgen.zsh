@@ -18,6 +18,11 @@ if ! zgen saved; then
     zgen load mafredri/zsh-async
     zgen load sindresorhus/pure
 
+    # Add or override plugins locally
+    if [ -f ~/.zgen_local ]; then
+        source ~/.zgen_local
+    fi
+
     # save all to init script
     zgen save
 fi
