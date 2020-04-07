@@ -6,6 +6,8 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  - ["git clone git@github.com:ringvold/dotfiles-local.git ../dotfiles-local", Clone local dotfiles]
+  - [../dotfiles-local/install, Install local dotfiles]
 
 - link:
     ~/.dotfiles: ''
