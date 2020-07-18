@@ -2,22 +2,7 @@ set nocompatible              " be iMproved, required
 filetype on                   " required for compatibility with Mac OS X, See issue #167
 filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'itchyny/lightline.vim'
-Plugin 'junegunn/goyo.vim'
-Plugin 'junegunn/limelight.vim'
-Plugin 'sotte/presenting.vim'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'scrooloose/nerdtree'
-
-" All of your Plugins must be added before the following line
-call vundle#end() " required
+source $HOME/.vim/plug-config.vim
 
 " Jump to the marked line and column on ', and only the marked line on `.
 nnoremap ' `
@@ -31,9 +16,6 @@ set ignorecase
 let mapleader = ","
 
 :imap jj <Esc>
-
-" Keep 1000 commands worth of history.
-set history=1000
 
 " Allow 1000 levels of undo.
 set undolevels=1000
@@ -130,6 +112,8 @@ autocmd FileType ruby nmap <Leader>r :!ruby %<cr>
 
 " Navigate open buffers
 nmap <Space> :e#<Return>
+
+:tnoremap <Esc> <C-\><C-n>
 
 " Fra svv vimrc
 

@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/haraldringvold/code/dotfiles/zsh'
+let g:netrw_dirhist_2='/Users/haraldringvold/.dotfiles'
+let g:netrw_dirhist_3='/Users/haraldringvold/.dotfiles/zsh'
+let g:netrw_dirhist_4='/Users/haraldringvold/.oh-my-zsh/plugins/sublime'
+let g:netrw_dirhist_5='/Users/haraldringvold/code/dotfiles/zsh'
+let g:netrw_dirhist_6='/Users/haraldringvold/Library/Application Support/Alfred 3/Workflow Data'
+let g:netrw_dirhist_7='/Users/haraldringvold/code/dotfiles'
+let g:netrw_dirhist_8='/Users/haraldringvold/code/dotfiles-local'
+let g:netrw_dirhist_9='/Users/haraldringvold/code/dotfiles/zsh'
