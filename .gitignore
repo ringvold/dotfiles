@@ -6,7 +6,7 @@ dotfiles.sublime-project
 dotfiles.sublime-workspace
 
 vim/init.vim
-vim/bundle/*
+vim/plugged/*
 vim/backup/*
 vim/backup/*
 
