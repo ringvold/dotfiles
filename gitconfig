@@ -20,7 +20,7 @@
   staged = diff --cached
   unstaged = diff
 [core]
-  editor = vim
+  editor = nvim
   excludesfile = ~/.gitignore_global
 	trustctime = false
 	autocrlf = false
