@@ -6,6 +6,7 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 " Plug setup
+" call plug#begin(stdpath('data') . '/plugged')
 call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-sensible'
@@ -24,5 +25,9 @@ Plug 'sotte/presenting.vim'
 Plug 'plasticboy/vim-markdown'
 Plug 'scrooloose/nerdtree'
 Plug 'mhinz/vim-startify'
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh'
+    \ }
 
 call plug#end()
