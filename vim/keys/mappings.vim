@@ -18,6 +18,8 @@ map <down> <nop>
 map <left> <nop>
 map <right> <nop>
 
+nnoremap <silent> <leader>o :Files<CR>
+nnoremap <silent> <leader>O :Files<CR>
 
 " Navigate open buffers
 "nmap <Space> :e#<Return>

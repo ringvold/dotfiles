@@ -19,6 +19,8 @@
     \ 'coc-yank',
     \ 'coc-json',
     \ 'coc-marketplace',
+    \ 'coc-docker',
+    \ 'coc-rls',
     \ ]
 
 " Use tab for trigger completion with characters ahead and navigate.

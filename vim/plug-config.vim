@@ -21,6 +21,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'itchyny/lightline.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'sotte/presenting.vim'
 Plug 'plasticboy/vim-markdown'
 Plug 'scrooloose/nerdtree'
