@@ -3,7 +3,7 @@
 alias zshrefresh="source ~/.zshrc"
 
 # Git
-alias g=hub
+alias g=git
 alias gs='g status'
 alias gau='g add -u .'
 alias gun='g reset HEAD'
