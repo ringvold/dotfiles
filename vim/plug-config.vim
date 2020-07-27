@@ -13,9 +13,9 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-eunuch'
 Plug 'justinmk/vim-sneak'
 Plug 'liuchengxu/vim-which-key'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'itchyny/lightline.vim'
@@ -27,9 +27,13 @@ Plug 'sotte/presenting.vim'
 Plug 'plasticboy/vim-markdown'
 Plug 'scrooloose/nerdtree'
 Plug 'mhinz/vim-startify'
+
+
+" Coding
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
     \ 'do': 'bash install.sh'
     \ }
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
