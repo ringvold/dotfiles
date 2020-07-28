@@ -15,6 +15,7 @@
     ~/.dotfiles: ''
     ~/.gitconfig: gitconfig
     ~/.vimrc: vimrc
+    ~/.tmux.conf: tmux.conf
     ~/.vim: vim
     ~/.zsh: zsh
     ~/.zshrc: zshrc.zsh
