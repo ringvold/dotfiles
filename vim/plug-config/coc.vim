@@ -11,9 +11,6 @@
     \ 'coc-emoji',
     \ 'coc-cssmodules',
     \ 'coc-yaml',
-    \ 'coc-explorer',
-    \ 'coc-svg',
-    \ 'coc-prettier',
     \ 'coc-vimlsp',
     \ 'coc-xml',
     \ 'coc-yank',
@@ -22,6 +19,11 @@
     \ 'coc-docker',
     \ 'coc-rls',
     \ ]
+  
+" Plugins not working in WLS svv
+  " \ 'coc-explorer',
+  "  \ 'coc-svg',
+  "  \ 'coc-prettier',
 
 " Use tab for trigger completion with characters ahead and navigate.
 inoremap <silent><expr> <TAB>
