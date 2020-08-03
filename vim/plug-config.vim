@@ -27,7 +27,8 @@ Plug 'sotte/presenting.vim'
 Plug 'plasticboy/vim-markdown'
 Plug 'scrooloose/nerdtree'
 Plug 'mhinz/vim-startify'
-
+Plug 'ryanoasis/vim-devicons'
+Plug 'christianchiarulli/onedark.vim'
 
 " Coding
 Plug 'autozimu/LanguageClient-neovim', {
@@ -35,5 +36,6 @@ Plug 'autozimu/LanguageClient-neovim', {
     \ 'do': 'bash install.sh'
     \ }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'metakirby5/codi.vim'
 
 call plug#end()

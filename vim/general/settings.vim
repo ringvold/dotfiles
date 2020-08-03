@@ -29,7 +29,7 @@ set noswapfile
 set scrolloff=3
 
 " Set color scheme
-colorscheme busybee
+"colorscheme busybee
 
 " Enable syntax highlighting
 syntax on

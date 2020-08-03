@@ -6,6 +6,7 @@ dotfiles.sublime-project
 dotfiles.sublime-workspace
 
 vim/init.vim
+vim/.netrwhist
 vim/plugged/*
 vim/backup/*
 vim/backup/*
