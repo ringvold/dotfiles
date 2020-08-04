@@ -16,6 +16,7 @@
     ~/.gitconfig: gitconfig
     ~/.vimrc: vimrc
     ~/.tmux.conf: tmux.conf
+    ~/.screenrc: screenrc
     ~/.vim: vim
     ~/.zsh: zsh
     ~/.zshrc: zshrc.zsh
