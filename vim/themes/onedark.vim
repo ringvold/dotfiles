@@ -7,7 +7,7 @@
 "   augroup END
 " endif
 
-"autocmd ColorScheme * call onedark#set_highlight("Normal", { "fg": s:white }) " `bg` will not be styled since there is no `bg` setting
+" autocmd ColorScheme * call onedark#set_highlight("Normal", { "fg": s:white }) " `bg` will not be styled since there is no `bg` setting
 
 hi Comment cterm=italic
 let g:onedark_hide_endofbuffer=1

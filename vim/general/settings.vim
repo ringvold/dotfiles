@@ -68,7 +68,7 @@ set copyindent
 set backspace=indent,eol,start
 
 " Customize the status line
-set statusline=%f\ (%{&fenc})%=\ %l/%L
+" set statusline=%f\ (%{&fenc})%=\ %l/%L
 
 " Set filetype markdown for .md files
 autocmd BufRead,BufNew *.md set filetype=markdown

@@ -10,6 +10,7 @@ vim/.netrwhist
 vim/plugged/*
 vim/backup/*
 vim/backup/*
+vim/sessions
 
 !vim/undodir/.gitkeep
 !vim/undodir/.gitkeep
