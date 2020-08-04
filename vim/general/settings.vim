@@ -9,6 +9,10 @@ set ignorecase
 " Use relative line numbers
 set relativenumber
 
+" Show space as dot
+set list
+set listchars=space:·
+
 " Allow 1000 levels of undo.
 set undolevels=1000
 
