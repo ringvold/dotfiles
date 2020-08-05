@@ -18,16 +18,22 @@ Plug 'justinmk/vim-sneak'
 Plug 'liuchengxu/vim-which-key'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'sotte/presenting.vim'
-Plug 'plasticboy/vim-markdown'
 Plug 'scrooloose/nerdtree'
 Plug 'mhinz/vim-startify'
 Plug 'ryanoasis/vim-devicons'
 Plug 'christianchiarulli/onedark.vim'
+
+" Writing
+Plug 'junegunn/goyo.vim'
+Plug 'sotte/presenting.vim'
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+
+" Editing
+Plug 'editorconfig/editorconfig-vim'
 
 " Coding
 Plug 'autozimu/LanguageClient-neovim', {
