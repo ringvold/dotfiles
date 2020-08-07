@@ -12,7 +12,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-eunuch'
 Plug 'justinmk/vim-sneak'
 Plug 'liuchengxu/vim-which-key'
@@ -35,6 +34,7 @@ Plug 'plasticboy/vim-markdown'
 
 " Editing
 Plug 'editorconfig/editorconfig-vim'
+Plug 'tpope/vim-commentary'
 
 " Coding
 Plug 'autozimu/LanguageClient-neovim', {
@@ -42,6 +42,7 @@ Plug 'autozimu/LanguageClient-neovim', {
     \ 'do': 'bash install.sh'
     \ }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'sheerun/vim-polyglot'
 Plug 'metakirby5/codi.vim'
 
 call plug#end()

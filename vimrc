@@ -12,3 +12,4 @@ source $HOME/.vim/plug-config/fzf.vim
 source $HOME/.vim/plug-config/goyo.vim
 source $HOME/.vim/plug-config/sneak.vim
 source $HOME/.vim/plug-config/which-key.vim
+source $HOME/.vim/plug-config/vim-rooter.vim
