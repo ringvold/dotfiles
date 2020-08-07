@@ -25,6 +25,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'mhinz/vim-startify'
 Plug 'ryanoasis/vim-devicons'
 Plug 'christianchiarulli/onedark.vim'
+Plug 'airblade/vim-rooter'
 
 " Writing
 Plug 'junegunn/goyo.vim'
