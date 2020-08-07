@@ -8,9 +8,9 @@ let mapleader = ","
 " Exit insert mode
 :imap jj <Esc>
 
-" Jump to the marked line and column on ', and only the marked line on `.
-nnoremap ' `
-nnoremap ` '
+" Better indenting
+vnoremap < <gv
+vnoremap > >gv
 
 " Disable the arrow keys. You'll thank me later.
 map <up> <nop>
@@ -22,7 +22,7 @@ nnoremap <silent> <leader>o :Files<CR>
 nnoremap <silent> <leader>O :Files<CR>
 
 " Navigate open buffers
-"nmap <Space> :e#<Return>
+nmap <Space> :e#<Return>
 
 " Remap escape in terminal mode so I can get out
 :tnoremap <Esc> <C-\><C-n>
