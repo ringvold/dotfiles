@@ -23,8 +23,9 @@ Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'mhinz/vim-startify'
 Plug 'ryanoasis/vim-devicons'
-Plug 'christianchiarulli/onedark.vim'
 Plug 'airblade/vim-rooter'
+Plug 'christianchiarulli/nvcode-color-schemes.vim'
+Plug 'nvim-treesitter/nvim-treesitter'
 
 " Writing
 Plug 'junegunn/goyo.vim'
