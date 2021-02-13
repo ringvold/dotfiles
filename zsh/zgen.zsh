@@ -1,5 +1,6 @@
 # load zgen
-source "${HOME}/.dotfiles/zgen/zgen.zsh"
+#source "${HOME}/.dotfiles/zgen/zgen.zsh"
+source "${HOME}/.zgenom/zgenom.zsh"
 
 # if the init scipt doesn't exist
 if ! zgen saved; then
@@ -8,6 +9,7 @@ if ! zgen saved; then
     # plugins
     zgen oh-my-zsh plugins/git
     zgen oh-my-zsh plugins/sublime
+    zgen oh-my-zsh plugins/docker-compose
     zgen load zdharma/fast-syntax-highlighting
     zgen load mroth/evalcache
 
