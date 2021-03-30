@@ -13,6 +13,7 @@
 
 - link:
     ~/.dotfiles: ''
+    ~/.zgenom: zgenom
     ~/.gitconfig: gitconfig
     ~/.vimrc: vimrc
     ~/.tmux.conf: tmux.conf
