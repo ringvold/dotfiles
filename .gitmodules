@@ -4,9 +4,6 @@
 [submodule "vim/bundle/Vundle.vim"]
 	path = vim/bundle/Vundle.vim
 	url = https://github.com/VundleVim/Vundle.vim.git
-[submodule "zgen"]
-	path = zgen
-	url = https://github.com/tarjoilija/zgen.git
 [submodule "fasd"]
 	path = fasd
 	url = git@github.com:clvv/fasd.git
