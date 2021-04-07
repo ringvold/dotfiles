@@ -26,3 +26,5 @@
 	autocrlf = false
 [include]
   path = ~/.gitconfig_local
+[pull]
+	rebase = true
