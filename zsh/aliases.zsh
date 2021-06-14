@@ -24,8 +24,8 @@ alias todos='pt "TODO:" ./ --group --color'
 
 
 function serve {
-  port="${1:-3000}"
-  ruby -run -e httpd . -p $port
+  port=":${1:-8080}"
+  caddy file-server --browse --listen $port
 }
 
 
