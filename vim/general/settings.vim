@@ -8,6 +8,7 @@ set ignorecase
 
 " Use relative line numbers
 set relativenumber
+set number
 
 " Show space as dot
 set list
