@@ -14,6 +14,10 @@ alias fixmerge='git diff --name-only | uniq | xargs subl'
 alias mci='mvn clean install'
 alias mcis='mvn clean install -DskipTests'
 
+# Gradle
+alias gw=./gradlew
+
+# Tree
 alias tree2='tree -L 2'
 alias tree3='tree -L 3'
 alias tree4='tree -L 4'
@@ -28,4 +32,10 @@ function serve {
   caddy file-server --browse --listen $port
 }
 
+function wgup {
+  sudo wg-quick up ${1:-home}
+}
 
+function wgdown {
+  sudo wg-quick down ${1:-home}
+}
