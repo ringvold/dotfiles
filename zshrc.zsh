@@ -49,3 +49,8 @@ fi
 # unsetopt XTRACE
 # exec 2>&3 3>&-
 #
+
+# everything after the line should not be here
+# (automatically added by scripts)
+# ----------------------------------------------
+

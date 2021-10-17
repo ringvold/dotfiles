@@ -4,3 +4,6 @@
 source ~/.dotfiles/fasd/fasd
 _evalcache fasd --init posix-alias zsh-hook
 alias j=z
+
+# zfz
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

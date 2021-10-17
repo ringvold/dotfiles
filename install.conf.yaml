@@ -9,7 +9,7 @@
   - ["git clone git@github.com:ringvold/dotfiles-local.git ../dotfiles-local", Clone local dotfiles]
   - ["../dotfiles-local/install", Install local dotfiles]
   - ["git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf", Clone fzf]
-  - ["~/.fzf/install --all --no-update-rc", Install fzf]
+  - ["./fzf/install --all --no-update-rc", Install fzf]
 
 - link:
     ~/.dotfiles: ''
