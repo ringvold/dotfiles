@@ -26,6 +26,15 @@ alias pfind='ps aux | grep'
 
 alias todos='pt "TODO:" ./ --group --color'
 
+# OSX or not
+if [[ `uname` == "Darwin" ]]; then
+  alias open=open
+else
+  alias open=xdg-open
+fi
+
+
+# Functions
 
 function serve {
   port=":${1:-8080}"
@@ -39,3 +48,4 @@ function wgup {
 function wgdown {
   sudo wg-quick down ${1:-home}
 }
+
