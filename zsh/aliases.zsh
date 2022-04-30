@@ -26,13 +26,16 @@ alias pfind='ps aux | grep'
 
 alias todos='pt "TODO:" ./ --group --color'
 
+# Homebrew
+alias bs="brew search"
+alias bi="brew install"
+
 # OSX or not
 if [[ `uname` == "Darwin" ]]; then
   alias open=open
 else
   alias open=xdg-open
 fi
-
 
 # Functions
 
