@@ -1,6 +1,8 @@
 # Global aliases
 
 alias zshrefresh="source ~/.zshrc"
+alias uke='date +%V'
+alias isodate="date +'%Y-%m-%dT%H:%M:%SZ'"
 
 # Git
 alias g=git
@@ -8,6 +10,9 @@ alias gs='g status'
 alias gau='g add -u .'
 alias gun='g reset HEAD'
 alias gdc='g diff --cached'
+alias gwtb='g worktree add -b'
+alias gwta='g worktree add'
+alias gwtr='g worktree remove'
 alias fixmerge='git diff --name-only | uniq | xargs subl'
 
 # Maven
