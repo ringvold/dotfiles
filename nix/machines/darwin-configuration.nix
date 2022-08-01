@@ -13,6 +13,8 @@
   ];
   users.nix.configureBuildUsers = true;
 
+  nixpkgs.overlays = import ../lib/overlays.nix;
+
   # Enable experimental nix command and flakes
   # nix.package = pkgs.nixUnstable;
 
@@ -39,10 +41,6 @@
     '')
   ];
 
-  # https://github.com/nix-community/home-manager/issues/423
-# environment.variables = {
-#   TERMINFO_DIRS = "${pkgs.kitty.terminfo.outPath}/share/terminfo";
-# };
   programs.nix-index.enable = true;
 
   # Fonts
@@ -58,5 +56,12 @@
 
   # Add ability to used TouchID for sudo authentication
   security.pam.enableSudoTouchIdAuth = true;
+
+  # system.defaults.NSGlobalDomain.InitialKeyRepeat = 10;
+  # system.defaults.NSGlobalDomain.KeyRepeat = 1;
+
+  system.defaults.dock.autohide = true;
+
+  system.defaults.trackpad.Clicking = true;
 
 }

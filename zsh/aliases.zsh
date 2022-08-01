@@ -3,6 +3,7 @@
 alias zshrefresh="source ~/.zshrc"
 alias uke='date +%V'
 alias isodate="date +'%Y-%m-%dT%H:%M:%SZ'"
+alias vim=nvim
 
 # Nix
 alias drb="darwin-rebuild build"
