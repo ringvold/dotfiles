@@ -44,6 +44,10 @@ if [ -f ~/.zshrc_local_after ]; then
     source ~/.zshrc_local_after
 fi
 
+# Allow local customizations in the ~/.zshrc_local_before file
+if [ -f ~/.secrets ]; then
+    source ~/.secrets
+fi
 
 # Debug end
 # unsetopt XTRACE

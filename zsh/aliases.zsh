@@ -4,6 +4,10 @@ alias zshrefresh="source ~/.zshrc"
 alias uke='date +%V'
 alias isodate="date +'%Y-%m-%dT%H:%M:%SZ'"
 
+# Nix
+alias drb="darwin-rebuild build"
+alias drs="darwin-rebuild switch"
+
 # Git
 alias g=git
 alias gs='g status'

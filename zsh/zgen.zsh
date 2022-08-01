@@ -27,4 +27,7 @@ if ! zgen saved; then
 
     # save all to init script
     zgen save
+
+    zgenom compile "$HOME/.zshrc"
+    zgenom compile $ZDOTDIR
 fi
