@@ -23,8 +23,5 @@
     ~/.zshrc: zshrc.zsh
     ~/.editorconfig: editorconfig
     ~/.mackup.cfg: mackup.cfg
-    ~/.config/nvim: vim
-    ~/.config/nvim/init.vim: vimrc
-
-
-
+    ~/.config/nvim: nvim
+    ~/.config/nvim/init.lua: nvim/init.lua
