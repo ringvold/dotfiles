@@ -35,7 +35,12 @@
   programs.nix-index.enable = true;
   programs.neovim = {
     enable = true;
-    extraConfig = builtins.readFile ../../../vimrc;
+    vimAlias = true;
+    extraConfig = builtins.concatStringsSep "\n" [
+      ''
+      luafile ${builtins.toString ../../../nvim/init_lua.lua}
+      ''
+    ];
   };
 
 }
