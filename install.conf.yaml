@@ -20,6 +20,7 @@
     ~/.screenrc: screenrc
     ~/.vim: vim
     ~/.zsh: zsh
+    ~/.zshenv: zshenv.zsh
     ~/.zshrc: zshrc.zsh
     ~/.editorconfig: editorconfig
     ~/.mackup.cfg: mackup.cfg

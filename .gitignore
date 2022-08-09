@@ -16,3 +16,6 @@ vim/sessions
 !vim/undodir/.gitkeep
 
 result
+
+*.zwc
+.DS_Store

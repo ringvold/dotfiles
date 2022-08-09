@@ -32,7 +32,7 @@
   programs.htop.enable = true;
   programs.htop.settings.show_program_path = true;
 
-  programs.nix-index.enable = true;
+  programs.nix-index.enable = false;
   programs.neovim = {
     enable = true;
     vimAlias = true;

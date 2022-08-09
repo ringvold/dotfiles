@@ -10,6 +10,7 @@ if ! zgen saved; then
     zgen oh-my-zsh plugins/git
     zgen oh-my-zsh plugins/sublime
     zgen oh-my-zsh plugins/docker-compose
+    zgen oh-my-zsh plugins/docker
     zgen load zdharma/fast-syntax-highlighting
     zgen load mroth/evalcache
 
