@@ -1,5 +1,5 @@
 # Debug
-if [[ ${ZSH_DEBUG:-false} ]]; then
+if [ -v ZSH_DEBUG ]; then
   zmodload zsh/datetime
   setopt PROMPT_SUBST
   PS4='+$EPOCHREALTIME %N:%i> '
