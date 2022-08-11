@@ -14,6 +14,8 @@
     fd
     bat
 
+    _1password
+
     # Dev stuff
     jq
     gren
