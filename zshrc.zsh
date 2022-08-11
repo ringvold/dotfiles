@@ -11,6 +11,10 @@ if [ -v ZSH_DEBUG ]; then
   setopt XTRACE
 fi
 
+# Make sure $ZSH_CACHE_DIR is writable, otherwise use a directory in $HOME
+if [[ ! -w "$ZSH_CACHE_DIR" ]]; then
+  ZSH_CACHE_DIR="${XDG_CACHE_HOME:-$HOME/.cache}/zsh"
+fi
 
 # Allow local customizations in the ~/.zshrc_local_before file
 if [ -f ~/.zshrc_local_before ]; then
@@ -26,14 +30,14 @@ source ~/.dotfiles/shell/bootstrap.sh
 # Settings
 source ~/.zsh/settings.zsh
 
-# Init zgen
-#source ~/.zsh/zinit.zsh
-source ~/.zsh/zgen.zsh
-
 # Load lib files
 for config_file (~/.zsh/lib/*.zsh); do
   source $config_file
 done
+unset config_file
+
+# Init zgen
+source ~/.zsh/zgen.zsh
 
 # Aliases
 source ~/.zsh/aliases.zsh
