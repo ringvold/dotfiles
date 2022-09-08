@@ -63,5 +63,6 @@
   system.defaults.dock.autohide = true;
 
   system.defaults.trackpad.Clicking = true;
+  system.defaults.NSGlobalDomain.ApplePressAndHoldEnabled = false;
 
 }
