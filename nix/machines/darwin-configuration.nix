@@ -2,21 +2,21 @@
 {
   # Nix configuration ------------------------------------------------------------------------------
 
-  nix.binaryCaches = [
+  nix.settings.substituters = [
     "https://cache.nixos.org/"
   ];
-  nix.binaryCachePublicKeys = [
+  nix.settings.trusted-public-keys = [
     "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
   ];
-  nix.trustedUsers = [
+  nix.settings.trusted-users = [
     "@admin"
   ];
-  users.nix.configureBuildUsers = true;
+  nix.configureBuildUsers = true;
 
   nixpkgs.overlays = import ../lib/overlays.nix;
 
   # Enable experimental nix command and flakes
-  # nix.package = pkgs.nixUnstable;
+  nix.package = pkgs.nixUnstable;
 
   # experimental-features = nix-command flakes
   nix.extraOptions = ''
@@ -63,6 +63,7 @@
   system.defaults.dock.autohide = true;
 
   system.defaults.trackpad.Clicking = true;
+
   system.defaults.NSGlobalDomain.ApplePressAndHoldEnabled = false;
 
 }
