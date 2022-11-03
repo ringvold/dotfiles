@@ -38,11 +38,6 @@
   programs.neovim = {
     enable = true;
     vimAlias = true;
-    extraConfig = builtins.concatStringsSep "\n" [
-      ''
-      luafile ${builtins.toString ../../../nvim/init_lua.lua}
-      ''
-    ];
   };
 
   xdg.configFile = {
