@@ -11,6 +11,7 @@ vim.cmd [[
     autocmd!
     autocmd FileType gitcommit setlocal wrap
     autocmd FileType gitcommit setlocal spell
+    autocmd FileType gitcommit set cc=51
   augroup end
 
   augroup _markdown
