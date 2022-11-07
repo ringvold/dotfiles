@@ -19,9 +19,9 @@
     ~/.tmux.conf: tmux.conf
     ~/.screenrc: screenrc
     ~/.vim: vim
-    ~/.zsh: zsh
+    ~/.config/zsh: zsh
+    ~/.config/zsh/.zshrc: zsh/zshrc.zsh
     ~/.zshenv: zshenv.zsh
-    ~/.zshrc: zshrc.zsh
     ~/.editorconfig: editorconfig
     ~/.mackup.cfg: mackup.cfg
     ~/.config/nvim: nvim
