@@ -11,6 +11,8 @@ local keymap = vim.api.nvim_set_keymap
 vim.g.mapleader = ","
 vim.g.maplocalleader = ","
 
+keymap("n", "<Space>", ":e#<CR>", opts)
+
 -- Modes
 --   normal_mode = "n",
 --   insert_mode = "i",

@@ -4,8 +4,8 @@ if not status_ok then
 end
 
 configs.setup({
-	ensure_installed = "all", -- one of "all" or a list of languages
-	ignore_install = { "phpdoc" }, -- phpdoc causes problems on aarch64
+  ensure_installed = { "bash", "javascript", "json", "lua", "python", "typescript", "tsx", "css", "rust", "yaml", "markdown", "markdown_inline" }, -- one of "all" or a list of languages
+	ignore_install = { "phpdoc" }, -- List of parsers to ignore installing
 	highlight = {
 		enable = true, -- false will disable the whole extension
 		disable = { "css" }, -- list of language that will be disabled
