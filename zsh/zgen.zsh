@@ -1,5 +1,4 @@
 # load zgen
-#source "${HOME}/.dotfiles/zgen/zgen.zsh"
 source "${HOME}/.zgenom/zgenom.zsh"
 
 # if the init scipt doesn't exist
