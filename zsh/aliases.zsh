@@ -19,6 +19,8 @@ alias gwtb='g worktree add -b'
 alias gwta='g worktree add'
 alias gwtr='g worktree remove'
 alias fixmerge='git diff --name-only | uniq | xargs subl'
+alias gci='git checkout $(git branch | fzf)'
+alias gcia='git checkout $(git branch -a | fzf)'
 
 # Maven
 alias mci='mvn clean install'
