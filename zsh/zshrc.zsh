@@ -22,28 +22,28 @@ if [ -f ~/.zshrc_local_before ]; then
 fi
 
 # External plugins (initialized before)
-source ~/.zsh/plugins_before.zsh
+source $ZDOTDIR/plugins_before.zsh
 
 # General shell config
 source ~/.dotfiles/shell/bootstrap.sh
 
 # Settings
-source ~/.zsh/settings.zsh
+source $ZDOTDIR/settings.zsh
 
 # Load lib files
-for config_file (~/.zsh/lib/*.zsh); do
+for config_file ($ZDOTDIR/lib/*.zsh); do
   source $config_file
 done
 unset config_file
 
 # Init zgen
-source ~/.zsh/zgen.zsh
+source $ZDOTDIR/zgen.zsh
 
 # Aliases
-source ~/.zsh/aliases.zsh
+source $ZDOTDIR/aliases.zsh
 
 # External plugins (initialized after)
-source ~/.zsh/plugins_after.zsh
+source $ZDOTDIR/plugins_after.zsh
 
 # Allow local customizations in the ~/.zshrc_local_after file
 if [ -f ~/.zshrc_local_after ]; then
