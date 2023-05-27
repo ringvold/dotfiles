@@ -41,6 +41,8 @@ alias todos='pt "TODO:" ./ --group --color'
 # Homebrew
 alias bs="brew search"
 alias bi="brew install"
+alias b="brew"
+alias bupg="brew upgrade"
 
 # OSX or not
 if [[ `uname` == "Darwin" ]]; then
