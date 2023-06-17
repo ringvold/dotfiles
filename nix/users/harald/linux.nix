@@ -1,6 +1,14 @@
 { config, pkgs, lib, ... }:
 
 {
+  programs.zsh = {
+    enable = true;
+    dotDir = ".config/zsh";
+    initExtra = ''
+        source ${config.home.homeDirectory}/code/dotfiles/zsh/zshrc.zsh
+      '';
+  };
+
   dconf.settings = {
     "org/gnome/mutter" = {
       overlay-key = "Super_R";

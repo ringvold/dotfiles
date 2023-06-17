@@ -17,8 +17,12 @@
     _1password
 
     # Dev stuff
+    asdf-vm
     jq
     gren
+    nix-direnv
+    docker
+    docker-compose
 
     # Useful nix related tools
     cachix # adding/managing alternative binary caches hosted by Cachix
@@ -42,11 +46,5 @@
     vimAlias = true;
   };
 
-  xdg.configFile = {
-    nvim = {
-      source = ../../../nvim;
-      recursive = true;
-    };
-  };
-
+  xdg.configFile.nvim.source = config.lib.file.mkOutOfStoreSymlink  "${config.home.homeDirectory}/code/dotfiles/nvim";
 }
