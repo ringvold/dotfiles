@@ -29,6 +29,8 @@
     m-cli # useful macOS CLI commands
   ];
 
+  programs.zsh.enable = true;
+
   programs.direnv.nix-direnv.enable = true;
 
   programs.htop.enable = true;

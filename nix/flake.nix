@@ -3,7 +3,7 @@
 
   inputs = {
     # Package sets
-    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-22.11-darwin";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-23.05";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
 
     # Environment/system management
@@ -11,7 +11,7 @@
     darwin.inputs.nixpkgs.follows = "nixpkgs-unstable";
 
     # Home manager
-    home-manager.url = "github:nix-community/home-manager/release-22.11";
+    home-manager.url = "github:nix-community/home-manager/release-23.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
@@ -24,7 +24,12 @@
 
     # Configuration for `nixpkgs`
     nixpkgsConfig = {
-      config = { allowUnfree = true; };
+      config = { 
+        allowUnfree = true;
+        permittedInsecurePackages = [
+          "openssl-1.1.1u"
+        ];
+      };
       overlays = attrValues self.overlays ++ singleton (
         # Sub in x86 version of packages that don't build on Apple Silicon yet
         final: prev: (optionalAttrs (prev.stdenv.system == "aarch64-darwin") {
