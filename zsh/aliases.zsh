@@ -37,7 +37,7 @@ alias tree4='tree -L 4'
 
 alias pfind='ps aux | grep'
 
-alias todos='pt "TODO:" ./ --group --color'
+alias todos='rg "TODO:"'
 
 # Homebrew
 alias bs="brew search"
