@@ -18,6 +18,8 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.efi.efiSysMountPoint = "/boot/efi";
 
+  boot.supportedFilesystems = [ "ntfs" ];
+
   networking.hostName = "exit"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -30,6 +32,7 @@
 
   # Set your time zone.
   time.timeZone = "Europe/Oslo";
+  time.hardwareClockInLocalTime = true;
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.utf8";
