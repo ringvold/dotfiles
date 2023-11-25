@@ -6,6 +6,7 @@ if ! zgen saved; then
     echo "Creating a zgen save"
 
     # plugins
+    zgen oh-my-zsh plugins/dotenv
     zgen oh-my-zsh plugins/git
     zgen oh-my-zsh plugins/sublime
     zgen oh-my-zsh plugins/docker-compose
