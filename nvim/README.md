@@ -1,30 +1,35 @@
-# Neovim setup
-
-Based on LunarVim/neovim-from-scratch
-
-Todo:
-[ ] Colorscheme Onedarker not working on mac
-
-
-Rest of file is README from neovim-from-scratch
-**Important Update** When I initially created this repo I didn't anticipate the amount of breaking changes, if you'd like to use the same basic config as this one as a base I recommend my new repo: [nvim-basic-ide](https://github.com/LunarVim/nvim-basic-ide)
-
-**Another Update** This repo should work fine with Neovim 0.8, also all packages are pinned so it should remain stable.
-
-Each video will be associated with a branch so checkout the one you are interested in, you can follow along with this [playlist](https://www.youtube.com/watch?v=ctH-a-1eUME&list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ).
-
-## Try out this config
-
-Make sure to remove or move your current `nvim` directory
-
-**IMPORTANT** Requires [Neovim v0.8.0]](https://github.com/neovim/neovim/releases).  [Upgrade](#upgrade-to-latest-release) if you're on an earlier version. 
 ```
-git clone https://github.com/LunarVim/Neovim-from-scratch.git ~/.config/nvim
+    ✯                              .°•    |    
+    __     °    •                __      / \   
+   / /   ____ ___  ______  _____/ /_    | O |  
+  / /   / __ `/ / / / __ \/ ___/ __ \   | O |  
+ / /___/ /_/ / /_/ / / / / /__/ / / /  /| | |\ 
+/_____/\__,_/\__,_/_/ /_/\___/_/ /_/  /_(.|.)_\
 ```
 
-Run `nvim` and wait for the plugins to be installed 
+This config will provide a modular starting point for anyone looking to use Neovim as their IDE. It is meant to be simple and easy to understand and extend. Use it as a base for your own config or just take individual pieces.
 
-**NOTE** (You will notice treesitter pulling in a bunch of parsers the next time you open Neovim) 
+All the included plugins are pinned to a version that ensures they are compatible and will not update potentially introducing errors into your config. For every Neovim release I will update this repo along with the community to keep it up to date with the newest versions.
+
+As I mentioned, this config is meant as a starting point for people new to Neovim who want a familiar IDE experience. The config has a very simple structure that makes it easy to add new plugins.
+
+## Install Neovim 0.9
+
+You can install Neovim with your package manager e.g. brew, apt, pacman etc.. bus remember that when you update your packages Neovim may be upgraded to a newer version.
+
+If you would like to make sure Neovim only updates when you want it to than I recommend installing from source: [instructions](https://github.com/neovim/neovim/wiki/Installing-Neovim#install-from-source)
+
+## Install the config
+
+Make sure to remove or backup your current `nvim` directory
+
+```sh
+git clone https://github.com/LunarVim/Launch.nvim.git ~/.config/nvim
+```
+
+Run `nvim` and wait for the plugins to be installed
+
+**NOTE** (You will notice treesitter pulling in a bunch of parsers the next time you open Neovim)
 
 ## Get healthy
 
@@ -44,43 +49,47 @@ First we'll fix copy/paste
 
 - On Ubuntu
 
-  ```
-  sudo apt install xsel
-  ```
-
-- On Arch Linux
-
-  ```
-  sudo pacman -S xsel
+  ```sh
+  sudo apt install xsel # for X11
+  sudo apt install wl-clipboard # for wayland
   ```
 
 Next we need to install python support (node is optional)
 
 - Neovim python support
 
-  ```
+  ```sh
   pip install pynvim
   ```
 
 - Neovim node support
 
-  ```
+  ```sh
   npm i -g neovim
   ```
+
+We will also need `ripgrep` for Telescope to work:
+
+- Ripgrep
+
+  ```sh
+  sudo apt install ripgrep
+  ```
+
 ---
 
 **NOTE** make sure you have [node](https://nodejs.org/en/) installed, I recommend a node manager like [fnm](https://github.com/Schniz/fnm).
 
-### Upgrade to latest release
+## Fonts
 
-Assuming you [built from source](https://github.com/neovim/neovim/wiki/Building-Neovim#quick-start), `cd` into the folder where you cloned `neovim` and run the following commands. 
-```
-git pull
-make distclean && make CMAKE_BUILD_TYPE=Release
-sudo make install
-nvim -v
-```
+I recommend using the following repo to get a "Nerd Font" (Font that supports icons)
 
-> The computing scientist's main challenge is not to get confused by the complexities of his own making. 
+[getnf](https://github.com/ronniedroid/getnf)
+
+**NOTE** Some are already setup as examples, remove them if you want
+
+---
+
+> The computing scientist's main challenge is not to get confused by the complexities of his own making.
 
 \- Edsger W. Dijkstra
