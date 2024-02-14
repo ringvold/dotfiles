@@ -14,6 +14,7 @@ fi
 # Make sure $ZSH_CACHE_DIR is writable, otherwise use a directory in $HOME
 if [[ ! -w "$ZSH_CACHE_DIR" ]]; then
   ZSH_CACHE_DIR="${XDG_CACHE_HOME:-$HOME/.cache}/zsh"
+  mkdir -p $ZSH_CACHE_DIR/completions
 fi
 
 # Allow local customizations in the ~/.zshrc_local_before file
