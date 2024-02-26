@@ -24,7 +24,7 @@
 
     # Configuration for `nixpkgs`
     nixpkgsConfig = {
-      config = { 
+      config = {
         allowUnfree = true;
         permittedInsecurePackages = [
           "openssl-1.1.1u"
@@ -52,7 +52,7 @@
 
     # My `nix-darwin` configs
     darwinConfigurations = rec {
-      bekk-mac-2763 = darwinSystem {
+      macbook = darwinSystem {
         system = "aarch64-darwin";
         modules = attrValues self.darwinModules ++ [
           # Main `nix-darwin` config

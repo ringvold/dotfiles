@@ -19,6 +19,7 @@
     # Dev stuff
     asdf-vm
     jq
+#    gren
     nix-direnv
     docker
     docker-compose
