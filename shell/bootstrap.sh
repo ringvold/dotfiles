@@ -1,3 +1,3 @@
 # General shell config
 
-export PATH=~/bin:/usr/local/bin:$PATH
+export PATH=~/bin:/usr/local/bin:/usr/sbin:$PATH
