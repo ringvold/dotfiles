@@ -77,7 +77,7 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-  nixpkgs.config.permittedInsecurePackages = ["openssl-1.1.1w"];
+  nixpkgs.config.permittedInsecurePackages = ["openssl-1.1.1w" "electron-25.9.0"];
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget

@@ -14,6 +14,7 @@
     fd
     bat
 
+    obsidian
     _1password
 
     # Dev stuff

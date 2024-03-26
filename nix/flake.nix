@@ -28,6 +28,7 @@
         allowUnfree = true;
         permittedInsecurePackages = [
           "openssl-1.1.1u"
+          "electron-25.9.0"
         ];
       };
       overlays = attrValues self.overlays ++ singleton (
