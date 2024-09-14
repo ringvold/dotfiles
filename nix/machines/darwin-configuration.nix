@@ -11,12 +11,13 @@
   nix.settings.trusted-users = [
     "@admin"
   ];
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nix.configureBuildUsers = true;
 
   nixpkgs.overlays = import ../lib/overlays.nix;
 
   # Enable experimental nix command and flakes
-  nix.package = pkgs.nixUnstable;
+  nix.package = pkgs.nixFlakes;
 
   # experimental-features = nix-command flakes
   nix.extraOptions = ''
@@ -44,12 +45,12 @@
 
   programs.nix-index.enable = false;
 
-  # Fonts
-  fonts.fontDir.enable = true;
-  fonts.packages = with pkgs; [
-    recursive
-    (nerdfonts.override { fonts = [ "FiraCode" ]; })
-  ];
+  # # Fonts
+  # fonts.fontDir.enable = true;
+  # fonts.packages = with pkgs; [
+  #   recursive
+  #   (nerdfonts.override { fonts = [ "FiraCode" ]; })
+  # ];
 
   # Keyboard
   system.keyboard.enableKeyMapping = true;

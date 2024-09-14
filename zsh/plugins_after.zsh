@@ -8,5 +8,5 @@ alias j=z
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# 1password cli completion if exists
-(( $+commands[op] )) && eval "$(op completion zsh)"; compdef _op op
+# direnv
+eval "$(direnv hook zsh)"

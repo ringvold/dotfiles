@@ -8,8 +8,8 @@ elif [[ "$1" == bekk ]]; then
   nix build .#darwinConfigurations.bekk-mac-2763.system
   sudo ./result/sw/bin/darwin-rebuild switch --flake .
 elif [[ "$1" == macbook ]]; then
-  nix build .#darwinConfigurations.macbook
+  nix build .#darwinConfigurations.macbook.system
   sudo ./result/sw/bin/darwin-rebuild switch --flake .
 else
-  echo "Unknown configuration name. Valid: exit, bekk"
+  echo "Unknown configuration name. Valid: exit, macbook"
 fi
