@@ -1,6 +1,6 @@
 # Global aliases
 
-alias zshrefresh="source ~/.zshrc"
+alias zshrefresh="source $ZDOTDIR/.zshrc"
 alias uke='date +%V'
 alias isodate="date +'%Y-%m-%dT%H:%M:%SZ'"
 alias vim=nvim
@@ -45,6 +45,12 @@ alias bi="brew install"
 alias b="brew"
 alias bupg="brew upgrade"
 
+# Other
+alias dcdb="docker compose up db"
+
+alias claude="/Users/harald/.claude/local/claude"
+
+
 # OSX or not
 if [[ `uname` == "Darwin" ]]; then
   alias open=open
@@ -66,4 +72,5 @@ function wgup {
 function wgdown {
   sudo wg-quick down ${1:-home}
 }
+
 
