@@ -13,6 +13,8 @@
     # Home manager
     home-manager.url = "github:nix-community/home-manager/release-24.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs-unstable";
+
+    ghostty = { url = "github:ghostty-org/ghostty"; };
   };
 
   outputs = { self, darwin, nixpkgs, home-manager, ... }@inputs:
@@ -66,7 +68,7 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.harald = import ./users/harald/home-manager.nix;
-            home-manager.backupFileExtension = "backup";
+            home-manager.backupFileExtension = "hm-backup";
           }
         ];
       };

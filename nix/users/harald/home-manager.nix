@@ -15,7 +15,7 @@
     bat
 
     obsidian
-    _1password
+    _1password-cli
 
     # Dev stuff
     asdf-vm

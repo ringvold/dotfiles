@@ -17,7 +17,7 @@
   nixpkgs.overlays = import ../lib/overlays.nix;
 
   # Enable experimental nix command and flakes
-  nix.package = pkgs.nixFlakes;
+  nix.package = pkgs.nixVersions.stable;
 
   # experimental-features = nix-command flakes
   nix.extraOptions = ''
@@ -38,8 +38,8 @@
   # Issue: https://github.com/nix-community/home-manager/issues/1341
   environment.systemPackages = with pkgs; [
     terminal-notifier
-    (pkgs.writeShellScriptBin "nixFlakes" ''
-      exec ${pkgs.nixFlakes}/bin/nix --experimental-features "nix-command flakes" "$@"
+    (pkgs.writeShellScriptBin "nixVersions.stable" ''
+      exec ${pkgs.nixVersions.stable}/bin/nix --experimental-features "nix-command flakes" "$@"
     '')
   ];
 
@@ -67,5 +67,7 @@
   system.defaults.trackpad.Clicking = true;
 
   system.defaults.NSGlobalDomain.ApplePressAndHoldEnabled = false;
+
+  system.stateVersion = 5;
 
 }
