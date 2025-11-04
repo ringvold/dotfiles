@@ -3,7 +3,7 @@
 
   inputs = {
     # Package sets
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
 
     # Environment/system management
@@ -11,7 +11,7 @@
     darwin.inputs.nixpkgs.follows = "nixpkgs-unstable";
 
     # Home manager
-    home-manager.url = "github:nix-community/home-manager/release-24.05";
+    home-manager.url = "github:nix-community/home-manager/release-25.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs-unstable";
 
     ghostty = { url = "github:ghostty-org/ghostty"; };
@@ -68,7 +68,8 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.harald = import ./users/harald/home-manager.nix;
-            home-manager.backupFileExtension = "hm-backup";
+            home-manager.backupFileExtension = "backup";
+
           }
         ];
       };

@@ -40,20 +40,25 @@
   # fonts
   # fonts.fontconfig.enable = true;
 
-  # programs.atuin = {
-  #   enable = true;
-  #   enableZshIntegration = true;
-  #   flags = [
-  #     "--disable-up-arrow"
-  #   ];
-  # };
+  programs.zoxide = {
+    enable = true;
+    enableZshIntegration = true;
+  };
+
+  programs.atuin = {
+    enable = true;
+    enableZshIntegration = true;
+    flags = [
+      "--disable-up-arrow"
+    ];
+  };
 
   # programs.zsh.enable = true;
   programs.zsh = {
     enable = true;
     dotDir = ".config/zsh";
     history.share = true;
-    initExtra = ''
+    initContent = ''
         source ${config.home.homeDirectory}/code/dotfiles/zsh/zshrc.zsh
       '';
   };

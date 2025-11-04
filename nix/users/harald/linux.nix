@@ -4,7 +4,7 @@
   programs.zsh = {
     enable = true;
     dotDir = ".config/zsh";
-    initExtra = ''
+    initContent = ''
         source ${config.home.homeDirectory}/code/dotfiles/zsh/zshrc.zsh
       '';
   };
