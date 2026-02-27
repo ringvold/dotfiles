@@ -24,6 +24,7 @@
   excludesfile = ~/.gitignore_global
 	trustctime = false
 	autocrlf = false
+	pager = delta
 [include]
   path = ~/.gitconfig_local
 [pull]
@@ -32,3 +33,9 @@
 	defaultBranch = main
 [gpg "ssh"]
 	allowedSignersFile = /Users/harald/.ssh/allowed_signers
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+[merge]
+	conflictStyle = zdiff3

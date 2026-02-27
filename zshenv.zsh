@@ -5,4 +5,3 @@ export ELIXIR_ERL_OPTIONS="-kernel shell_history enabled"
 
 # Uncomment to activate debug mode
 #export ZSH_DEBUG=false
-. "$HOME/.cargo/env"

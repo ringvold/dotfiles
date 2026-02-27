@@ -49,6 +49,8 @@ alias bupg="brew upgrade"
 alias dcdb="docker compose up db"
 alias db=distrobox
 
+#alias claude="/Users/harald/.claude/local/claude"
+
 # OSX or not
 if [[ `uname` == "Darwin" ]]; then
   alias open=open
@@ -70,5 +72,3 @@ function wgup {
 function wgdown {
   sudo wg-quick down ${1:-home}
 }
-
-
