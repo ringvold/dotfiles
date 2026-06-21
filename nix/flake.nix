@@ -1,9 +1,9 @@
 {
-  description = "Harald's darwin system";
+  description = "Harald's Nix system";
 
   inputs = {
     # Package sets
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
 
     # Environment/system management
@@ -11,7 +11,7 @@
     darwin.inputs.nixpkgs.follows = "nixpkgs-unstable";
 
     # Home manager
-    home-manager.url = "github:nix-community/home-manager/release-24.05";
+    home-manager.url = "github:nix-community/home-manager/release-26.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs-unstable";
 
     ghostty = { url = "github:ghostty-org/ghostty"; };
@@ -48,7 +48,13 @@
   in
   {
     nixosConfigurations.exit = mkSystem "exit" rec {
-      inherit overlays nixpkgs home-manager;
+      inherit overlays nixpkgs home-manager inputs;
+      system = "x86_64-linux";
+      user = "harald";
+    };
+
+    nixosConfigurations.exit-kde = mkSystem "exit-kde" rec {
+      inherit overlays nixpkgs home-manager inputs;
       system = "x86_64-linux";
       user = "harald";
     };

@@ -1,14 +1,6 @@
 { config, pkgs, lib, ... }:
 
 {
-  programs.zsh = {
-    enable = true;
-    dotDir = ".config/zsh";
-    initExtra = ''
-        source ${config.home.homeDirectory}/code/dotfiles/zsh/zshrc.zsh
-      '';
-  };
-
   dconf.settings = {
     "org/gnome/mutter" = {
       overlay-key = "Super_R";
@@ -26,6 +18,7 @@
 
     gtk3.extraConfig = { gtk-application-prefer-dark-theme = 0; };
     gtk4.extraConfig = { gtk-application-prefer-dark-theme = 0; };
+    gtk4.theme.name = "Adwaita-dark";
   };
 
   # Misc configuration files --------------------------------------------------------------------

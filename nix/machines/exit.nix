@@ -7,7 +7,6 @@
 {
 
   nix = {
-    package = pkgs.nixFlakes; # or versioned attributes like nixVersions.nix_2_8
     extraOptions = ''
       experimental-features = nix-command flakes
     '';
@@ -16,7 +15,6 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.loader.efi.efiSysMountPoint = "/boot/efi";
 
   boot.supportedFilesystems = [ "ntfs" ];
 
@@ -35,21 +33,19 @@
   time.hardwareClockInLocalTime = true;
 
   # Select internationalisation properties.
-  i18n.defaultLocale = "en_US.utf8";
+  i18n.defaultLocale = "en_US.UTF-8";
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
   # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
-
-  services.dbus.packages = with pkgs; [ gnome2.GConf ];
+  services.displayManager.gdm.enable = true;
+  services.desktopManager.gnome.enable = true;
 
   # Configure keymap in X11
-  services.xserver = {
+  services.xserver.xkb = {
     layout = "no";
-    xkbVariant = "";
+    variant = "";
   };
 
   # Configure console keymap
@@ -59,8 +55,7 @@
   services.printing.enable = true;
 
   # Enable sound with pipewire.
-  sound.enable = true;
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -86,8 +81,8 @@
     discord
     firefox
     git
-    gnome.adwaita-icon-theme
-    gnome.gnome-tweaks
+    adwaita-icon-theme
+    gnome-tweaks
     gnomeExtensions.appindicator
     gnomeExtensions.dash-to-dock
     neovim
@@ -106,7 +101,6 @@
   environment.gnome.excludePackages = (with pkgs; [
     gnome-photos
     gnome-tour
-  ]) ++ (with pkgs.gnome; [
     gnome-music
     gnome-terminal
     gedit # text editor
@@ -124,7 +118,7 @@
   fonts.fontDir.enable = true;
   fonts.packages = with pkgs; [
     recursive
-    (nerdfonts.override { fonts = [ "FiraCode" ]; })
+    nerd-fonts.fira-code
   ];
 
   programs.dconf.enable = true;
@@ -157,6 +151,6 @@
   # this value at the release version of the first install of this system.
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "22.05"; # Did you read the comment?
+  system.stateVersion = "26.05"; # Did you read the comment?
 
 }

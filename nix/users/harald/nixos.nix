@@ -4,7 +4,7 @@
   users.users.harald = {
     isNormalUser = true;
     home = "/home/harald";
-    extraGroups = [ "docker" "wheel" ];
+    extraGroups = [ "docker" "networkmanager" "wheel" ];
     shell = pkgs.zsh;
     hashedPassword = "$6$npsUsmLRkW2mdvht$VxMxaMhMcr52BIOIfFq9CKouQwEosRrgeT9/voFORp8xUIIVe85Wfq.Bc/TMyFoEEH62uB9ucjCtXhwq2NLiV/";
     openssh.authorizedKeys.keys = [

@@ -3,8 +3,10 @@
 
 if [[ "$1" == "exit" ]]; then
   nix build .#nixosConfigurations.exit.config.system.build.toplevel
+elif [[ "$1" == "exit-kde" ]]; then
+  nix build .#nixosConfigurations.exit-kde.config.system.build.toplevel
 elif [[ "$1" == macbook ]]; then
   nix build .#darwinConfigurations.macbook.system
 else
-  echo "Unknown configuration name. Valid: exit, macbook"
+  echo "Unknown configuration name. Valid: exit, exit-kde, macbook"
 fi

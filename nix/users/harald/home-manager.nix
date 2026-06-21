@@ -13,6 +13,7 @@
     ripgrep
     fd
     bat
+    python3
 
     obsidian
     _1password-cli
@@ -48,15 +49,8 @@
   #   ];
   # };
 
-  # programs.zsh.enable = true;
-  programs.zsh = {
-    enable = true;
-    dotDir = ".config/zsh";
-    history.share = true;
-    initExtra = ''
-        source ${config.home.homeDirectory}/code/dotfiles/zsh/zshrc.zsh
-      '';
-  };
+  # zsh is managed by dotbot (~/.zshenv and ~/.config/zsh symlink to dotfiles repo),
+  # so we don't enable programs.zsh here.
 
   # programs.direnv = {
   #     enable = true;
@@ -68,10 +62,6 @@
   programs.htop.settings.show_program_path = true;
 
   programs.nix-index.enable = false;
-  programs.neovim = {
-    enable = true;
-    vimAlias = true;
-  };
 
-  xdg.configFile.nvim.source = config.lib.file.mkOutOfStoreSymlink  "${config.home.homeDirectory}/code/dotfiles/nvim";
+  # nvim config managed by dotbot.
 }
