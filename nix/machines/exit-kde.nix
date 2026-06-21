@@ -60,6 +60,7 @@
     _1password-gui
     claude-code
     discord
+    distrobox
     firefox
     git
     google-chrome
