@@ -71,6 +71,7 @@
     spotify
     sublime-merge
     vim
+    zed-editor
     wget
     # KDE extras
     kdePackages.kate

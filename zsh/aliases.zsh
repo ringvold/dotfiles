@@ -47,9 +47,7 @@ alias bupg="brew upgrade"
 
 # Other
 alias dcdb="docker compose up db"
-
-alias claude="/Users/harald/.claude/local/claude"
-
+alias db=distrobox
 
 # OSX or not
 if [[ `uname` == "Darwin" ]]; then
